@@ -1,9 +1,15 @@
 import G6 from '@antv/g6';
 
 G6.registerNode('card-node', {
-  anchorPoints: [0.5, 1],
+  anchorPoints: [
+    [0, 1],
+    [0.5, 1],
+  ],
   getAnchorPoints(cfg) {
-    return [0.5, 1];
+    return [
+      [0, 1],
+      [0.5, 1],
+    ];
   },
   draw: function drawShape(cfg, group) {
     const r = 2;
